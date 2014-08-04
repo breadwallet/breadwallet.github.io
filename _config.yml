@@ -3,13 +3,12 @@ markdown:         redcarpet
 pygments:         true
 
 # Permalinks
-permalink:        pretty
+permalink:        none
 
 # Setup
 title:            breadwallet
 tagline:          bitcoin done right
 url:              http://breadwallet.com
-paginate:         0
 baseurl:          /
 author:
   name:           Aaron Voisine

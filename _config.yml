@@ -1,19 +1,6 @@
-# Dependencies
-markdown:         redcarpet
-pygments:         true
-
-# Permalinks
-permalink:        none
-
 # Setup
-title:            breadwallet
-tagline:          bitcoin done right
 url:              http://breadwallet.com
 baseurl:          /
-author:
-  name:           Aaron Voisine
-  url:            https://github.com/voisine
-  email:          voisine@gmail.com
 
 # Custom vars
 version:          1.0.0

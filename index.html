@@ -1,1 +1,105 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+  <title>breadwallet - bitcoin done right</title>
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+        href="/images/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/images/favicon.ico">
+
+  <style type="text/css">
+html { 
+    background: url(images/city.jpg) no-repeat center center fixed; 
+    background-size: cover;
+}
+
+body {
+    font-family: 'Helvetica Neue Thin','HelveticaNeue-Thin','helvetica neue',
+                 helvetica,arial,'lucida grande',sans-serif;
+    font-size: 32px; font-weight: 200; line-height: 40px; color: #fff;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+.intro {
+    width: 40%; height: 45%;
+    margin: auto 10%;
+    position: absolute;
+    top: 10%; left: 0; bottom: auto; right: 0;
+    text-align: right;
+}
+
+.links {
+    padding: 25px;
+    line-height: 180%;
+}
+
+.large {
+    font-size: 48px; font-weight: 150; color: #fff;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+    line-height: 200%;
+}
+
+.icon {
+    width: 40px; height: 40px;
+    vertical-align: middle;
+}
+  </style>
+</head>
+
+<body>
+  <div class="intro">
+    <svg viewbox="0 0 500 305" preserveAspectRatio="xMaxYMax meet">
+<defs><filter id="drop-shadow">
+<feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
+<feOffset dx="0" dy="2" result="offsetblur"/>
+<feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+<feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter></defs>
+<g stroke="white" fill-opacity="0" filter="url(#drop-shadow)">
+<g id="bread" stroke-width="20" stroke-linecap="round" 
+   transform="translate(25,15)">
+<g id="b"><path d="m0,0 v+80" /><circle cx="40" cy="80" r="40" />
+<path d="m-15,15 h+45" stroke-width="15" /></g>
+<g id="r" transform="translate(149,0)">
+<path d="m0,40 a40,40 0 0,0 -40,40 v+40" /></g>
+<g id="e" transform="translate(165,0)">
+<path d="m5,95 l+70,-35 m0,0 a40,40 0 1,0 -0,40" /></g>
+<g id="a" transform="translate(266,0)"><path d="m80,80 v+40" />
+<circle cx="40" cy="80" r="40" /></g>
+<g id="d" transform="translate(375,0)"><path d="m80,0 v+80" />
+<circle cx="40" cy="80" r="40" /></g>
+</g>
+<g id="wallet" stroke-width="5" stroke-linecap="round"
+   transform="translate(25,175)">
+<g id="w">
+<path d="m0,40 v+50 a30,30 0 1,0 60,0 v-50 m0,50 a30,30 0 1,0 60,0 v-50" /></g>
+<g id="a" transform="translate(147,0)"><path d="m80,80 v+40" />
+<circle cx="40" cy="80" r="40" /></g>
+<g id="l" transform="translate(256,0)"><path d="m0,0 v+120" /></g>
+<g id="l" transform="translate(289,0)"><path d="m0,0 v+120" /></g>
+<g id="e" transform="translate(318,0)">
+<path d="m5,95 l+70,-35 m0,0 a40,40 0 1,0 -0,40" /></g>
+<g id="t" transform="translate(420,0)">
+<path d="m30,40 h-30 m0,-20 v+70 a30,30 0 0,0 30,30" /></g></g></g>
+    </svg>
+    <div class="links">
+      <div class="large">bitcoin&nbsp;done&nbsp;right</div>
+      <a href="https://itunes.apple.com/app/breadwallet/id885251393"
+	 onmouseover="dlicon.src='images/download-pressed.png'"
+	 onmouseout="dlicon.src='images/download.png'">
+      download&nbsp;breadwallet
+      <img id="dlicon" class="icon" src="images/download.png" /></a><br />
+      <a href="https://github.com/voisine/breadwallet" 
+	 onmouseover="giticon.src='images/github-pressed.png'"
+	 onmouseout="giticon.src='images/github.png'">
+      get&nbsp;the&nbsp;source
+      <img id="giticon" class="icon" src="images/github.png" /></a><br />
+    </div>
+  </div>
+</body>
+</html>

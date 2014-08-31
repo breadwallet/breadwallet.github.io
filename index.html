@@ -25,17 +25,20 @@ a:link, a:visited, a:hover, a:active {
     color: #fff;
 }
 
-.intro {
-    width: 40%; height: 45%;
-    margin: auto 10%;
+.logo {
+    width: 40%; height: auto;
+    min-width: 390px; min-height: 235px; max-height: 50%;
     position: absolute;
-    top: 10%; left: 0; bottom: auto; right: 0;
-    text-align: right;
+    top: auto; left: 10%; bottom: 40%; right: auto;
 }
 
 .links {
-    padding: 25px;
+    width: 40%;
+    min-width: 390px;
     line-height: 180%;
+    position: absolute;
+    top: 60%; left: 10%; 
+    text-align: right;
 }
 
 .large {
@@ -48,12 +51,23 @@ a:link, a:visited, a:hover, a:active {
     width: 40px; height: 40px;
     vertical-align: middle;
 }
+
+.screenshot {
+    width: 285px;
+    position: absolute;
+    margin: auto 0;
+    top: 0; left: 60%; bottom: 0; right: auto;
+    text-align: right;
+}
   </style>
+
+  <script>var $ = function(id) { return document.getElementById(id); };</script>
 </head>
 
 <body>
-  <div class="intro">
-    <svg viewbox="0 0 500 305" preserveAspectRatio="xMaxYMax meet">
+  <div class="wrap">
+    <div class="logo">
+      <svg viewbox="0 0 500 305" preserveAspectRatio="xMaxYMax meet">
 <defs><filter id="drop-shadow">
 <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
 <feOffset dx="0" dy="2" result="offsetblur"/>
@@ -87,19 +101,21 @@ a:link, a:visited, a:hover, a:active {
 <g id="t" transform="translate(420,0)">
 <path d="m30,40 h-30 m0,-20 v+70 a30,30 0 0,0 30,30" /></g></g></g>
     </svg>
-    <div class="links">
-      <div class="large">bitcoin&nbsp;done&nbsp;right</div>
-      <a href="https://itunes.apple.com/app/breadwallet/id885251393"
-	 onmouseover="dlicon.src='images/download-pressed.png'"
-	 onmouseout="dlicon.src='images/download.png'">
-      download&nbsp;breadwallet
-      <img id="dlicon" class="icon" src="images/download.png" /></a><br />
-      <a href="https://github.com/voisine/breadwallet" 
-	 onmouseover="giticon.src='images/github-pressed.png'"
-	 onmouseout="giticon.src='images/github.png'">
-      get&nbsp;the&nbsp;source
-      <img id="giticon" class="icon" src="images/github.png" /></a><br />
     </div>
+    <div class="links">
+      <div class="large">bitcoin&nbsp;done&nbsp;right&nbsp;&nbsp;</div>
+      <a href="https://itunes.apple.com/app/breadwallet/id885251393"
+         onmouseover="$('dlicon').src='images/download-pressed.png'"
+         onmouseout="$('dlicon').src='images/download.png'">
+      download&nbsp;breadwallet&nbsp;<img id="dlicon" class="icon"
+      src="images/download.png" /></a>&nbsp;&nbsp;<br />
+      <a href="https://github.com/voisine/breadwallet" 
+         onmouseover="$('giticon').src='images/github-pressed.png'"
+         onmouseout="$('giticon').src='images/github.png'">
+      get&nbsp;the&nbsp;source&nbsp;<img id="giticon" class="icon"
+      src="images/github.png" /></a>&nbsp;&nbsp;<br />
+    </div>
+    <img class="screenshot" src="images/txhistory.png">
   </div>
 </body>
 </html>

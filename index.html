@@ -6,6 +6,7 @@
   <link rel="apple-touch-icon-precomposed" sizes="144x144"
         href="/images/apple-touch-icon-precomposed.png">
   <link rel="shortcut icon" href="/images/favicon.ico">
+  <meta name="apple-itunes-app" content="app-id=885251393">
 
   <style type="text/css">
 html { 
@@ -14,9 +15,9 @@ html {
 }
 
 body {
-    font-family: 'Helvetica Neue Thin','HelveticaNeue-Thin','helvetica neue',
-                 helvetica,arial,'lucida grande',sans-serif;
-    font-size: 32px; font-weight: 200; line-height: 40px; color: #fff;
+    font-family: 'Helvetica Neue','HelveticaNeue','helvetica neue',helvetica,
+                 arial,'lucida grande',sans-serif;
+    font-size: 22px; font-weight: 300; line-height: 32px; color: #fff;
     text-shadow: 0px 2px 3px rgba(0,0,0,0.3);
 }
 
@@ -32,42 +33,67 @@ a:link, a:visited, a:hover, a:active {
     top: auto; left: 10%; bottom: 40%; right: auto;
 }
 
-.links {
-    width: 40%;
-    min-width: 390px;
-    line-height: 180%;
-    position: absolute;
-    top: 60%; left: 10%; 
-    text-align: right;
-}
-
-.large {
-    font-size: 48px; font-weight: 150; color: #fff;
-    text-shadow: 0px 2px 3px rgba(0,0,0,0.3);
-    line-height: 200%;
-}
-
-.icon {
-    width: 40px; height: 40px;
-    vertical-align: middle;
-}
-
 .screenshot {
-    width: 285px;
+    width: 285px; height: auto;
     position: absolute;
     margin: auto 0;
     top: 0; left: 60%; bottom: 0; right: auto;
     text-align: right;
+    clear: both;
 }
+
+.content {
+    width: 80%; height: auto;
+    min-width: 640px;
+    position: absolute;
+    margin: auto 0;
+    top: 60%; left: 10%; bottom: auto; right: 10%;
+}
+
+.links {
+    width: 50%; height: auto;
+    min-width: 390px;
+    font-family: 'Helvetica Neue Thin','HelveticaNeue-Thin','helvetica neue',
+                 helvetica,arial,'lucida grande',sans-serif;
+    font-size: 32px; font-weight: 200;
+    line-height: 60px;
+    text-align: right;
+}
+
+.tagline {
+    font-size: 48px; font-weight: 150;
+    line-height: 80px;
+}
+
+.action {
+    width: 40px; height: 40px;
+    vertical-align: middle;
+}
+
+.sections {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.title {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.icon {
+    width: 50px; height: 50px;
+    vertical-align: middle;
+}
+
   </style>
 
   <script>var $ = function(id) { return document.getElementById(id); };</script>
 </head>
 
 <body>
-  <div class="wrap">
-    <div class="logo">
-      <svg viewbox="0 0 500 305" preserveAspectRatio="xMaxYMax meet">
+  <div class="logo">
+    <svg viewbox="0 0 500 305" preserveAspectRatio="xMaxYMax meet">
 <defs><filter id="drop-shadow">
 <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
 <feOffset dx="0" dy="2" result="offsetblur"/>
@@ -101,21 +127,74 @@ a:link, a:visited, a:hover, a:active {
 <g id="t" transform="translate(420,0)">
 <path d="m30,40 h-30 m0,-20 v+70 a30,30 0 0,0 30,30" /></g></g></g>
     </svg>
-    </div>
+  </div>
+
+  <img class="screenshot" src="images/pin.png">
+
+  <div class="content">
     <div class="links">
-      <div class="large">bitcoin&nbsp;done&nbsp;right&nbsp;&nbsp;</div>
+      <div class="tagline">bitcoin&nbsp;done&nbsp;right&nbsp;&nbsp;</div>
       <a href="https://itunes.apple.com/app/breadwallet/id885251393"
-         onmouseover="$('dlicon').src='images/download-pressed.png'"
-         onmouseout="$('dlicon').src='images/download.png'">
-      download&nbsp;breadwallet&nbsp;<img id="dlicon" class="icon"
+         onmouseover="$('dl').src='images/download-pressed.png'"
+         onmouseout="$('dl').src='images/download.png'">
+      download&nbsp;breadwallet&nbsp;<img id="dl" class="action"
       src="images/download.png" /></a>&nbsp;&nbsp;<br />
       <a href="https://github.com/voisine/breadwallet" 
-         onmouseover="$('giticon').src='images/github-pressed.png'"
-         onmouseout="$('giticon').src='images/github.png'">
-      get&nbsp;the&nbsp;source&nbsp;<img id="giticon" class="icon"
+         onmouseover="$('git').src='images/github-pressed.png'"
+         onmouseout="$('git').src='images/github.png'">
+      get&nbsp;the&nbsp;source&nbsp;<img id="git" class="action"
       src="images/github.png" /></a>&nbsp;&nbsp;<br />
     </div>
-    <img class="screenshot" src="images/txhistory.png">
+
+    <div class="sections">
+      <div class="network">
+	<div class="title">&mdash;<br />&nbsp;<br />
+	  <img class="icon" src="images/network.png">
+	  &nbsp;&nbsp;the first standalone iOS bitcoin wallet
+	</div>
+	Unlike other iOS wallets, breadwallet is a real standalone bitcoin
+	client. There is no server to get hacked or go down, so you can always
+	access your money. Using SPV mode, breadwallet connects directly to the
+	bitcoin network with the fast performance you need on a mobile device.
+	<br />&nbsp;
+      </div>
+
+      <div class="security">
+	<div class="title">&mdash;<br />&nbsp;<br />
+	  the next step in wallet security&nbsp;&nbsp;
+	  <img class="icon" src="images/chain.png">
+	</div>
+	breadwallet is designed to protect you from malware, browser security
+	holes, <i>even physical theft</i>. With AES hardware encryption, app
+	sandboxing, keychain and code signatures, breadwallet represents a
+	significant security advance over web and desktop wallets, and other
+	mobile platforms.
+	<br />&nbsp;
+      </div>
+
+      <div class="simplicity">
+	<div class="title">&mdash;<br />&nbsp;<br />
+	  <img class="icon" src="images/button.png">
+	  &nbsp;&nbsp;beautiful simplicity
+	</div>
+	Simplicity is breadwallet's core design principle. If your device is
+	ever lost or broken, a simple backup phrase is all you need to restore
+	your wallet on another device. Because breadwallet is a "deterministic"
+	wallet, all your bitcoin addresses can be recovered from your backup
+	phrase.
+	<br />&nbsp;
+      </div>
+
+      <div class="title">&mdash;<br />&nbsp;<br />&nbsp;<br />
+	<a href="https://itunes.apple.com/app/breadwallet/id885251393"><img
+	   height="40px" width="135px" src="images/badge_appstore-lrg.png"></a>
+	<br />
+	&nbsp;<br />
+	&nbsp;<br />
+	&nbsp;<br />
+	&nbsp;
+      </div>
+    </div>
   </div>
 </body>
 </html>

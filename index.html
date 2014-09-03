@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>breadwallet - bitcoin done right</title>
+  <title>breadwallet - bitcoin wallet</title>
 
   <link rel="apple-touch-icon-precomposed" sizes="144x144"
         href="/images/apple-touch-icon-precomposed.png">
   <link rel="shortcut icon" href="/images/favicon.ico">
+  <meta name="apple-itunes-app" content="app-id=885251393">
 
   <style type="text/css">
 html { 
-    background: url(images/city.jpg) no-repeat center center fixed; 
+    background: #888 url(images/bazaar.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
 body {
     font-family: 'Helvetica Neue Thin','HelveticaNeue-Thin','helvetica neue',
                  helvetica,arial,'lucida grande',sans-serif;
-    font-size: 32px; font-weight: 200; line-height: 40px; color: #fff;
+    font-size: 21px; font-weight: 300; line-height: 32px; color: #fff;
     text-shadow: 0px 2px 3px rgba(0,0,0,0.3);
 }
 
@@ -25,34 +26,93 @@ a:link, a:visited, a:hover, a:active {
     color: #fff;
 }
 
-.intro {
-    width: 40%; height: 45%;
-    margin: auto 10%;
+i {
+    color: #000;
+}
+
+.logo {
+    width: 40%; height: auto;
+    min-width: 390px; min-height: 235px; max-height: 50%;
     position: absolute;
-    top: 10%; left: 0; bottom: auto; right: 0;
+    top: auto; left: 10%; bottom: 40%; right: auto;
+}
+
+.screenshot {
+    width: 285px; height: 600px;
+    position: absolute;
+    margin: auto 0;
+    top: 0; left: 60%; bottom: 0; right: auto;
     text-align: right;
+    clear: both;
+}
+
+.content {
+    width: 80%; height: auto;
+    min-width: 640px;
+    position: absolute;
+    margin: 20px 0;
+    top: 60%; left: 10%; bottom: auto; right: 10%;
 }
 
 .links {
-    padding: 25px;
-    line-height: 180%;
+    width: 50%; height: auto;
+    min-width: 390px;
+    font-size: 32px; font-weight: 200;
+    line-height: 60px;
+    text-align: right;
 }
 
-.large {
-    font-size: 48px; font-weight: 150; color: #fff;
-    text-shadow: 0px 2px 3px rgba(0,0,0,0.3);
-    line-height: 200%;
+.tagline {
+    font-size: 48px; font-weight: 150;
+    line-height: 80px;
 }
 
-.icon {
+.action {
     width: 40px; height: 40px;
     vertical-align: middle;
 }
+
+.section {
+    max-width: 720px;
+    margin: 60px auto;
+    padding: 40px 30px 35px 40px;
+    font-family: 'Helvetica Neue Light','HelveticaNeue-Light',
+                 'helvetica neue',helvetica,arial,'lucida grande',sans-serif;
+    text-align: left;
+    color: #555;
+    text-shadow: 0px 1px 0px #fff;
+    background: rgba(255,255,255,0.85);
+}
+
+.separator {
+    font-family: 'Helvetica Neue','HelveticaNeue',
+                 'helvetica neue',helvetica,arial,'lucida grande',sans-serif;
+    text-align: center;
+    margin: 40px;
+}
+
+.title {
+    font-size: 17px; letter-spacing: 3px;
+    margin: 0px auto 20px auto;
+    text-align: center;
+}
+
+.icon {
+    width: 50px; height: 50px;
+    vertical-align: middle;
+}
+
+.badge {
+    margin: 80px auto;
+    text-align: center;
+}
   </style>
+
+  <script>var $ = function(id) { return document.getElementById(id); };</script>
 </head>
 
 <body>
-  <div class="intro">
+  <div class="logo">
     <svg viewbox="0 0 500 305" preserveAspectRatio="xMaxYMax meet">
 <defs><filter id="drop-shadow">
 <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
@@ -87,18 +147,69 @@ a:link, a:visited, a:hover, a:active {
 <g id="t" transform="translate(420,0)">
 <path d="m30,40 h-30 m0,-20 v+70 a30,30 0 0,0 30,30" /></g></g></g>
     </svg>
+  </div>
+
+  <img class="screenshot" src="images/pin.png">
+
+  <div class="content">
     <div class="links">
-      <div class="large">bitcoin&nbsp;done&nbsp;right</div>
+      <div class="tagline">bitcoin&nbsp;done&nbsp;right&nbsp;&nbsp;</div>
       <a href="https://itunes.apple.com/app/breadwallet/id885251393"
-	 onmouseover="dlicon.src='images/download-pressed.png'"
-	 onmouseout="dlicon.src='images/download.png'">
-      download&nbsp;breadwallet
-      <img id="dlicon" class="icon" src="images/download.png" /></a><br />
+         onmouseover="$('dl').src='images/download-pressed.png'"
+         onmouseout="$('dl').src='images/download.png'">
+      download&nbsp;breadwallet&nbsp;<img id="dl" class="action"
+      src="images/download.png" /></a>&nbsp;&nbsp;<br />
       <a href="https://github.com/voisine/breadwallet" 
-	 onmouseover="giticon.src='images/github-pressed.png'"
-	 onmouseout="giticon.src='images/github.png'">
-      get&nbsp;the&nbsp;source
-      <img id="giticon" class="icon" src="images/github.png" /></a><br />
+         onmouseover="$('git').src='images/github-pressed.png'"
+         onmouseout="$('git').src='images/github.png'">
+      get&nbsp;the&nbsp;source&nbsp;<img id="git" class="action"
+      src="images/github.png" /></a>&nbsp;&nbsp;<br />
+    </div>
+
+    <div class="section">
+      <div class="title">
+	<img class="icon" src="images/network.png">
+	&nbsp;THE FIRST STANDALONE iOS BITCOIN WALLET
+	&nbsp;&nbsp;
+      </div>
+      Unlike other iOS wallets, breadwallet is a real standalone bitcoin
+      client. There is no server to get hacked or go down, so you can always
+      access your money. Using SPV mode, breadwallet connects directly to the
+      bitcoin network with the fast performance you need on a mobile device.
+    </div>
+
+    <div class="separator">&mdash;</div>
+    
+    <div class="section">
+      <div class="title">
+	&nbsp;&nbsp;THE NEXT STEP IN WALLET SECURITY&nbsp;
+	<img class="icon" src="images/chain.png">
+      </div>
+      breadwallet is designed to protect you from malware, browser security
+      holes, <i>even physical theft</i>. With AES hardware encryption, app
+      sandboxing, keychain and code signatures, breadwallet represents a
+      significant security advance over web and desktop wallets, and other
+      mobile platforms.
+    </div>
+
+    <div class="separator">&mdash;</div>
+
+    <div class="section">
+      <div class="title" style="margin:-10px auto 30px auto">
+	<img class="icon" src="images/button.png" style="vertical-align:bottom">
+	&nbsp;BEAUTIFUL SIMPLICITY
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+      Simplicity is breadwallet's core design principle. A simple backup
+      phrase is all you need to restore your wallet on another device if yours
+      is ever lost or broken. Because breadwallet is "deterministic",
+      your balance and transaction history can be recovered from just your
+      backup phrase.
+    </div>
+
+    <div class="badge">
+      <a href="https://itunes.apple.com/app/breadwallet/id885251393"><img
+         height="50px" width="169px" src="images/badge_appstore-lrg.png"></a>
     </div>
   </div>
 </body>

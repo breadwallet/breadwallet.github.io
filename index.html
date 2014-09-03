@@ -10,7 +10,7 @@
 
   <style type="text/css">
 html { 
-    background: #888 url(images/city.jpg) no-repeat center center fixed; 
+    background: #888 url(images/bazaar.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -71,9 +71,16 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .sections {
-    max-width: 800px;
+    max-width: 720px;
     margin: 0 auto;
     text-align: left;
+}
+
+.separator {
+    font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold',
+                 'helvetica neue',helvetica,arial,'lucida grande',sans-serif;
+    text-align: center;
+    margin: 60px;
 }
 
 .title {
@@ -151,20 +158,22 @@ a:link, a:visited, a:hover, a:active {
 
     <div class="sections">
       <div class="network">
-	<div class="title">&mdash;<br />&nbsp;<br />
+	<div class="title">&nbsp;<br />
 	  <img class="icon" src="images/network.png">
 	  &nbsp;&nbsp;The first standalone iOS bitcoin wallet
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	</div>
 	Unlike other iOS wallets, breadwallet is a real standalone bitcoin
 	client. There is no server to get hacked or go down, so you can always
 	access your money. Using SPV mode, breadwallet connects directly to the
 	bitcoin network with the fast performance you need on a mobile device.
-	<br />&nbsp;
       </div>
 
+      <div class="separator">&mdash;</div>
+
       <div class="security">
-	<div class="title">&mdash;<br />&nbsp;<br />
-	  The next step in wallet security&nbsp;&nbsp;
+	<div class="title">
+	  &nbsp;&nbsp;&nbsp;The next step in wallet security&nbsp;&nbsp;
 	  <img class="icon" src="images/chain.png">
 	</div>
 	breadwallet is designed to protect you from malware, browser security
@@ -172,23 +181,24 @@ a:link, a:visited, a:hover, a:active {
 	sandboxing, keychain and code signatures, breadwallet represents a
 	significant security advance over web and desktop wallets, and other
 	mobile platforms.
-	<br />&nbsp;
       </div>
 
+      <div class="separator">&mdash;</div>
+
       <div class="simplicity">
-	<div class="title">&mdash;<br />&nbsp;<br />
+	<div class="title">
 	  <img class="icon" src="images/button.png">
 	  &nbsp;&nbsp;Beautiful simplicity
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	</div>
 	Simplicity is breadwallet's core design principle. A simple backup
 	phrase is all you need to restore your wallet on another device if yours
 	is ever lost or broken. Because breadwallet is "deterministic",
 	your balance and trasaction history can be recovered from just your
 	backup phrase.
-	<br />&nbsp;
       </div>
 
-      <div class="title">&mdash;<br />&nbsp;<br />&nbsp;<br />
+      <div class="title">&nbsp;<br />&nbsp;<br />&nbsp;<br />
 	<a href="https://itunes.apple.com/app/breadwallet/id885251393"><img
 	   height="40px" width="135px" src="images/badge_appstore-lrg.png"></a>
 	<br />

@@ -17,13 +17,17 @@ html {
 body {
     font-family: 'Helvetica Neue Thin','HelveticaNeue-Thin','helvetica neue',
                  helvetica,arial,'lucida grande',sans-serif;
-    font-size: 22px; font-weight: 300; line-height: 32px; color: #fff;
+    font-size: 21px; font-weight: 300; line-height: 32px; color: #fff;
     text-shadow: 0px 2px 3px rgba(0,0,0,0.3);
 }
 
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     color: #fff;
+}
+
+i {
+    color: #000;
 }
 
 .logo {
@@ -72,23 +76,24 @@ a:link, a:visited, a:hover, a:active {
     max-width: 720px;
     margin: 60px auto;
     padding: 40px 30px 35px 40px;
+    font-family: 'Helvetica Neue Light','HelveticaNeue-Light',
+                 'helvetica neue',helvetica,arial,'lucida grande',sans-serif;
     text-align: left;
-    color: #000;
+    color: #666;
     text-shadow: 0px 1px 0px #fff;
     background: rgba(255,255,255,0.85);
 }
 
 .separator {
-    font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold',
+    font-family: 'Helvetica Neue','HelveticaNeue',
                  'helvetica neue',helvetica,arial,'lucida grande',sans-serif;
     text-align: center;
     margin: 40px;
 }
 
 .title {
-    font-family: 'Helvetica Neue','HelveticaNeue','helvetica neue',helvetica,
-                 arial,'lucida grande',sans-serif;
-    color: rgba(0,0,0,0.8);
+    font-size: 17px; letter-spacing: 3px;
+    color: rgba(0,0,0,0.5);
     margin: 0px auto 20px auto;
     text-align: center;
 }
@@ -102,7 +107,6 @@ a:link, a:visited, a:hover, a:active {
     margin: 80px auto;
     text-align: center;
 }
-
   </style>
 
   <script>var $ = function(id) { return document.getElementById(id); };</script>
@@ -163,49 +167,46 @@ a:link, a:visited, a:hover, a:active {
       src="images/github.png" /></a>&nbsp;&nbsp;<br />
     </div>
 
-    <!-- div class="sections" -->
-      <div class="section">
-	<div class="title">
-	  <img class="icon" src="images/network.png">
-	  &nbsp;&nbsp;the first standalone iOS bitcoin wallet
-	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	</div>
-	Unlike other iOS wallets, breadwallet is a real standalone bitcoin
-	client. There is no server to get hacked or go down, so you can always
-	access your money. Using SPV mode, breadwallet connects directly to the
-	bitcoin network with the fast performance you need on a mobile device.
+    <div class="section">
+      <div class="title">
+	<img class="icon" src="images/network.png">
+	&nbsp;THE FIRST STANDALONE iOS BITCOIN WALLET
+	&nbsp;&nbsp;
       </div>
+      Unlike other iOS wallets, breadwallet is a real standalone bitcoin
+      client. There is no server to get hacked or go down, so you can always
+      access your money. Using SPV mode, breadwallet connects directly to the
+      bitcoin network with the fast performance you need on a mobile device.
+    </div>
 
-      <div class="separator">&mdash;</div>
-
-      <div class="section">
-	<div class="title">
-	  &nbsp;&nbsp;&nbsp;the next step in wallet security&nbsp;&nbsp;
-	  <img class="icon" src="images/chain.png">
-	</div>
-	breadwallet is designed to protect you from malware, browser security
-	holes, <i>even physical theft</i>. With AES hardware encryption, app
-	sandboxing, keychain and code signatures, breadwallet represents a
-	significant security advance over web and desktop wallets, and other
-	mobile platforms.
+    <div class="separator">&mdash;</div>
+    
+    <div class="section">
+      <div class="title">
+	&nbsp;&nbsp;THE NEXT STEP IN WALLET SECURITY&nbsp;
+	<img class="icon" src="images/chain.png">
       </div>
+      breadwallet is designed to protect you from malware, browser security
+      holes, <i>even physical theft</i>. With AES hardware encryption, app
+      sandboxing, keychain and code signatures, breadwallet represents a
+      significant security advance over web and desktop wallets, and other
+      mobile platforms.
+    </div>
 
-      <div class="separator">&mdash;</div>
+    <div class="separator">&mdash;</div>
 
-      <div class="section">
-	<div class="title">
-	  <img class="icon" src="images/button.png">
-	  &nbsp;&nbsp;beautiful simplicity
-	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	</div>
-	Simplicity is breadwallet's core design principle. A simple backup
-	phrase is all you need to restore your wallet on another device if yours
-	is ever lost or broken. Because breadwallet is "deterministic",
-	your balance and transaction history can be recovered from just your
-	backup phrase.
+    <div class="section">
+      <div class="title" style="margin:-10px auto 30px auto">
+	<img class="icon" src="images/button.png" style="vertical-align:bottom">
+	&nbsp;BEAUTIFUL SIMPLICITY
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       </div>
-
-    <!--/div -->
+      Simplicity is breadwallet's core design principle. A simple backup
+      phrase is all you need to restore your wallet on another device if yours
+      is ever lost or broken. Because breadwallet is "deterministic",
+      your balance and transaction history can be recovered from just your
+      backup phrase.
+    </div>
 
     <div class="badge">
       <a href="https://itunes.apple.com/app/breadwallet/id885251393"><img

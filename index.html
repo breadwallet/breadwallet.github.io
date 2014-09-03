@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>breadwallet - bitcoin done right</title>
+  <title>breadwallet - bitcoin wallet</title>
 
   <link rel="apple-touch-icon-precomposed" sizes="144x144"
         href="/images/apple-touch-icon-precomposed.png">
@@ -15,8 +15,8 @@ html {
 }
 
 body {
-    font-family: 'Helvetica Neue','HelveticaNeue','helvetica neue',helvetica,
-                 arial,'lucida grande',sans-serif;
+    font-family: 'Helvetica Neue Thin','HelveticaNeue-Thin','helvetica neue',
+                 helvetica,arial,'lucida grande',sans-serif;
     font-size: 22px; font-weight: 300; line-height: 32px; color: #fff;
     text-shadow: 0px 2px 3px rgba(0,0,0,0.3);
 }
@@ -53,8 +53,6 @@ a:link, a:visited, a:hover, a:active {
 .links {
     width: 50%; height: auto;
     min-width: 390px;
-    font-family: 'Helvetica Neue Thin','HelveticaNeue-Thin','helvetica neue',
-                 helvetica,arial,'lucida grande',sans-serif;
     font-size: 32px; font-weight: 200;
     line-height: 60px;
     text-align: right;
@@ -70,30 +68,39 @@ a:link, a:visited, a:hover, a:active {
     vertical-align: middle;
 }
 
-.sections {
+.section {
     max-width: 720px;
-    margin: 0 auto;
+    margin: 60px auto;
+    padding: 40px 30px 35px 40px;
     text-align: left;
+    color: #000;
+    text-shadow: 0px 1px 0px #fff;
+    background: rgba(255,255,255,0.85);
 }
 
 .separator {
     font-family: 'Helvetica Neue Bold','HelveticaNeue-Bold',
                  'helvetica neue',helvetica,arial,'lucida grande',sans-serif;
     text-align: center;
-    margin: 60px;
+    margin: 40px;
 }
 
 .title {
-    font-family: 'Helvetica Neue Medium','HelveticaNeue-Medium',
-                 'helvetica neue',helvetica,arial,'lucida grande',sans-serif;
-    color: #ddd;
-    margin: 20px auto;
+    font-family: 'Helvetica Neue','HelveticaNeue','helvetica neue',helvetica,
+                 arial,'lucida grande',sans-serif;
+    color: rgba(0,0,0,0.8);
+    margin: 0px auto 20px auto;
     text-align: center;
 }
 
 .icon {
     width: 50px; height: 50px;
     vertical-align: middle;
+}
+
+.badge {
+    margin: 80px auto;
+    text-align: center;
 }
 
   </style>
@@ -156,11 +163,11 @@ a:link, a:visited, a:hover, a:active {
       src="images/github.png" /></a>&nbsp;&nbsp;<br />
     </div>
 
-    <div class="sections">
-      <div class="network">
-	<div class="title">&nbsp;<br />
+    <!-- div class="sections" -->
+      <div class="section">
+	<div class="title">
 	  <img class="icon" src="images/network.png">
-	  &nbsp;&nbsp;The first standalone iOS bitcoin wallet
+	  &nbsp;&nbsp;the first standalone iOS bitcoin wallet
 	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	</div>
 	Unlike other iOS wallets, breadwallet is a real standalone bitcoin
@@ -171,9 +178,9 @@ a:link, a:visited, a:hover, a:active {
 
       <div class="separator">&mdash;</div>
 
-      <div class="security">
+      <div class="section">
 	<div class="title">
-	  &nbsp;&nbsp;&nbsp;The next step in wallet security&nbsp;&nbsp;
+	  &nbsp;&nbsp;&nbsp;the next step in wallet security&nbsp;&nbsp;
 	  <img class="icon" src="images/chain.png">
 	</div>
 	breadwallet is designed to protect you from malware, browser security
@@ -185,28 +192,24 @@ a:link, a:visited, a:hover, a:active {
 
       <div class="separator">&mdash;</div>
 
-      <div class="simplicity">
+      <div class="section">
 	<div class="title">
 	  <img class="icon" src="images/button.png">
-	  &nbsp;&nbsp;Beautiful simplicity
+	  &nbsp;&nbsp;beautiful simplicity
 	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	</div>
 	Simplicity is breadwallet's core design principle. A simple backup
 	phrase is all you need to restore your wallet on another device if yours
 	is ever lost or broken. Because breadwallet is "deterministic",
-	your balance and trasaction history can be recovered from just your
+	your balance and transaction history can be recovered from just your
 	backup phrase.
       </div>
 
-      <div class="title">&nbsp;<br />&nbsp;<br />&nbsp;<br />
-	<a href="https://itunes.apple.com/app/breadwallet/id885251393"><img
-	   height="40px" width="135px" src="images/badge_appstore-lrg.png"></a>
-	<br />
-	&nbsp;<br />
-	&nbsp;<br />
-	&nbsp;<br />
-	&nbsp;
-      </div>
+    <!--/div -->
+
+    <div class="badge">
+      <a href="https://itunes.apple.com/app/breadwallet/id885251393"><img
+         height="50px" width="169px" src="images/badge_appstore-lrg.png"></a>
     </div>
   </div>
 </body>

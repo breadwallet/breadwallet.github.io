@@ -33,10 +33,8 @@ i {
 }
 
 .logo {
-    width: 40%; height: auto;
-    min-width: 390px; min-height: 235px; max-height: 50%;
-    position: absolute;
-    top: auto; left: 10%; bottom: 40%; right: auto;
+    text-align: right;
+    width: 50%; height: 240px;
 }
 
 .screenshot {
@@ -48,12 +46,12 @@ i {
     clear: both;
 }
 
-.content {
-    width: 80%; height: auto;
+.intro {
+    width: 80%; height: 500px;
     min-width: 640px;
     position: absolute;
-    margin: 20px 0;
-    top: 60%; left: 10%; bottom: auto; right: 10%;
+    margin: auto 0;
+    top: 0; left: 10%; bottom: 0; right: auto;
 }
 
 .tagline {
@@ -80,6 +78,14 @@ i {
 .action {
     width: 40px; height: 40px;
     vertical-align: middle;
+}
+
+.content {
+    width: 80%;
+    min-width: 640px;
+    position: absolute;
+    margin: auto 0;
+    top: 85%; left: 10%; bottom: 0; right: auto;
 }
 
 .section {
@@ -121,8 +127,12 @@ i {
 </head>
 
 <body>
-  <div class="logo">
-    <svg viewbox="0 0 500 305" preserveAspectRatio="xMaxYMax meet">
+  <img class="screenshot" src="images/pin.png">
+
+  <div class="intro">
+    <div class="logo">
+      <svg width="395px" viewbox="0 0 500 305"
+	   preserveAspectRatio="xMinYMin meet">
 <defs><filter id="drop-shadow">
 <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
 <feOffset dx="0" dy="2" result="offsetblur"/>
@@ -155,14 +165,12 @@ i {
 <path d="m5,95 l+70,-35 m0,0 a40,40 0 1,0 -0,40" /></g>
 <g id="t" transform="translate(420,0)">
 <path d="m30,40 h-30 m0,-20 v+70 a30,30 0 0,0 30,30" /></g></g></g>
-    </svg>
-  </div>
+      </svg>
+    </div>
 
-  <img class="screenshot" src="images/pin.png">
-
-  <div class="content">
     <div class="links">
       <div class="tagline">bitcoin&nbsp;done&nbsp;right&nbsp;&nbsp;</div>
+      &nbsp;<br />
       <a href="https://itunes.apple.com/app/breadwallet/id885251393"
          onmouseover="$('dl').src='images/download-pressed.png'"
          onmouseout="$('dl').src='images/download.png'">
@@ -172,9 +180,11 @@ i {
          onmouseover="$('git').src='images/github-pressed.png'"
          onmouseout="$('git').src='images/github.png'">
       get&nbsp;the&nbsp;source&nbsp;<img id="git" class="action"
-      src="images/github.png" /></a>&nbsp;&nbsp;<br />
+      src="images/github.png" /></a>&nbsp;&nbsp;
     </div>
+  </div>
 
+  <div class="content">
     <div class="section">
       <div class="title">
 	<img class="icon" src="images/network.png" />
@@ -221,6 +231,9 @@ i {
       <a href="https://itunes.apple.com/app/breadwallet/id885251393"><img
          height="50px" width="169px" src="images/badge_appstore-lrg.png" 
 	 style="margin: 80px 20px 268px 40px;" /></a>
+      <br />&nbsp;
+      <br />&nbsp;
+      <br />&nbsp;
     </div>
   </div>
 </body>

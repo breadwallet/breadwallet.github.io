@@ -15,10 +15,12 @@ html {
 }
 
 body {
-    font-family: 'Helvetica Neue Thin','HelveticaNeue-Thin','helvetica neue',
-                 helvetica,arial,'lucida grande',sans-serif;
-    font-size: 21px; font-weight: 300; line-height: 32px; color: #fff;
-    text-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+    font-family: 'Helvetica Neue','HelveticaNeue','helvetica neue',helvetica,
+                 arial,'lucida grande',sans-serif;
+    font-size: 1em;
+    font-weight: 200;
+    line-height: 1.75;
+    text-shadow: 0px 1px 0px #fff;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -30,41 +32,43 @@ i {
     color: #000;
 }
 
-.logo {
-    width: 40%; height: auto;
-    min-width: 390px; min-height: 235px; max-height: 50%;
-    position: absolute;
-    top: auto; left: 10%; bottom: 40%; right: auto;
-}
-
-.screenshot {
-    width: 285px; height: 600px;
+.content {
+    width: 80%; height: 500px;
+    min-width: 770px;
     position: absolute;
     margin: auto 0;
-    top: 0; left: 60%; bottom: 0; right: auto;
-    text-align: right;
-    clear: both;
+    top: 0; left: 10%; bottom: 0; right: auto;
 }
 
-.content {
-    width: 80%; height: auto;
-    min-width: 640px;
-    position: absolute;
-    margin: 20px 0;
-    top: 60%; left: 10%; bottom: auto; right: 10%;
+.intro {
+    width: 50%;
+    float: left;
 }
 
-.links {
-    width: 50%; height: auto;
-    min-width: 390px;
-    font-size: 32px; font-weight: 200;
-    line-height: 60px;
+.logo {
     text-align: right;
+    height: 240px;
 }
 
 .tagline {
-    font-size: 48px; font-weight: 150;
-    line-height: 80px;
+    font-family: 'Helvetica Neue Thin','HelveticaNeue-Thin','helvetica neue',
+                 helvetica,arial,'lucida grande',sans-serif;
+    font-size: 1.5em;
+    font-weight: 100;
+    color: #fff;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+}
+
+.links {
+    height: auto;
+    min-width: 390px;
+    text-align: right;
+    font-family: 'Helvetica Neue Thin','HelveticaNeue-Thin','helvetica neue',
+                 helvetica,arial,'lucida grande',sans-serif;
+    font-size: 2em;
+    font-weight: 100;
+    color: #fff;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.3);
 }
 
 .action {
@@ -72,34 +76,38 @@ i {
     vertical-align: middle;
 }
 
+.screenshot {
+    float: left;
+    margin: -80px 0 0 80px;
+}
+
 .section {
-    max-width: 720px;
+    max-width: 690px;
     margin: 60px auto;
-    padding: 40px 30px 35px 40px;
-    font-family: 'Helvetica Neue Light','HelveticaNeue-Light',
-                 'helvetica neue',helvetica,arial,'lucida grande',sans-serif;
+    padding: 40px 30px 40px 40px;
     text-align: left;
-    color: #555;
-    text-shadow: 0px 1px 0px #fff;
+    color: #333;
     background: rgba(255,255,255,0.85);
 }
 
-.separator {
-    font-family: 'Helvetica Neue','HelveticaNeue',
-                 'helvetica neue',helvetica,arial,'lucida grande',sans-serif;
-    text-align: center;
-    margin: 40px;
-}
-
 .title {
-    font-size: 17px; letter-spacing: 3px;
+    font-size: 1em; letter-spacing: .3em;
     margin: 0px auto 20px auto;
     text-align: center;
+    color: #555;
 }
 
 .icon {
     width: 50px; height: 50px;
     vertical-align: middle;
+}
+
+.separator {
+    margin: 40px;
+    text-align: center;
+    font-size: 2em;
+    color: rgba(255,255,255,0.85);
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.3);
 }
 
 .badge {
@@ -112,8 +120,11 @@ i {
 </head>
 
 <body>
-  <div class="logo">
-    <svg viewbox="0 0 500 305" preserveAspectRatio="xMaxYMax meet">
+  <div class="content">
+    <div class="intro">
+      <div class="logo">
+	<svg width="395px" viewbox="0 0 500 305"
+	     preserveAspectRatio="xMinYMin meet">
 <defs><filter id="drop-shadow">
 <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
 <feOffset dx="0" dy="2" result="offsetblur"/>
@@ -146,29 +157,35 @@ i {
 <path d="m5,95 l+70,-35 m0,0 a40,40 0 1,0 -0,40" /></g>
 <g id="t" transform="translate(420,0)">
 <path d="m30,40 h-30 m0,-20 v+70 a30,30 0 0,0 30,30" /></g></g></g>
-    </svg>
-  </div>
+	</svg>
+      </div>
 
-  <img class="screenshot" src="images/pin.png">
-
-  <div class="content">
-    <div class="links">
-      <div class="tagline">bitcoin&nbsp;done&nbsp;right&nbsp;&nbsp;</div>
-      <a href="https://itunes.apple.com/app/breadwallet/id885251393"
-         onmouseover="$('dl').src='images/download-pressed.png'"
-         onmouseout="$('dl').src='images/download.png'">
-      download&nbsp;breadwallet&nbsp;<img id="dl" class="action"
-      src="images/download.png" /></a>&nbsp;&nbsp;<br />
-      <a href="https://github.com/voisine/breadwallet" 
-         onmouseover="$('git').src='images/github-pressed.png'"
-         onmouseout="$('git').src='images/github.png'">
-      get&nbsp;the&nbsp;source&nbsp;<img id="git" class="action"
-      src="images/github.png" /></a>&nbsp;&nbsp;<br />
+      <div class="links">
+	<div class="tagline">bitcoin&nbsp;done&nbsp;right&nbsp;&nbsp;</div>
+	&nbsp;<br />
+	<a href="https://itunes.apple.com/app/breadwallet/id885251393"
+           onmouseover="$('dl').src='images/download-pressed.png'"
+           onmouseout="$('dl').src='images/download.png'">
+        download&nbsp;breadwallet&nbsp;<img id="dl" class="action"
+        src="images/download.png" /></a>&nbsp;&nbsp;<br />
+	<a href="https://github.com/voisine/breadwallet" 
+           onmouseover="$('git').src='images/github-pressed.png'"
+           onmouseout="$('git').src='images/github.png'">
+        get&nbsp;the&nbsp;source&nbsp;<img id="git" class="action"
+        src="images/github.png" /></a>&nbsp;&nbsp;
+      </div>
     </div>
+
+    <div class="screenshot">
+      <img width="300px" height="585px" src="images/pin.png">
+    </div>
+
+    <br style="clear: left;" />
+    &nbsp;
 
     <div class="section">
       <div class="title">
-	<img class="icon" src="images/network.png">
+	<img class="icon" src="images/network.png" />
 	&nbsp;THE FIRST STANDALONE iOS BITCOIN WALLET
 	&nbsp;&nbsp;
       </div>
@@ -183,7 +200,7 @@ i {
     <div class="section">
       <div class="title">
 	&nbsp;&nbsp;THE NEXT STEP IN WALLET SECURITY&nbsp;
-	<img class="icon" src="images/chain.png">
+	<img class="icon" src="images/chain.png" />
       </div>
       breadwallet is designed to protect you from malware, browser security
       holes, <i>even physical theft</i>. With AES hardware encryption, app
@@ -196,8 +213,8 @@ i {
 
     <div class="section">
       <div class="title" style="margin:-10px auto 30px auto">
-	<img class="icon" src="images/button.png" style="vertical-align:bottom">
-	&nbsp;BEAUTIFUL SIMPLICITY
+	<img class="icon" src="images/button.png" style="vertical-align:bottom"
+	/>&nbsp;&nbsp;BEAUTIFUL SIMPLICITY
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       </div>
       Simplicity is breadwallet's core design principle. A simple backup
@@ -208,8 +225,13 @@ i {
     </div>
 
     <div class="badge">
+      <img height="585px" width="510px" src="images/screenshots.png" />
       <a href="https://itunes.apple.com/app/breadwallet/id885251393"><img
-         height="50px" width="169px" src="images/badge_appstore-lrg.png"></a>
+         height="50px" width="169px" src="images/badge_appstore-lrg.png" 
+	 style="margin: 80px 20px 268px 40px;" /></a>
+      <br />&nbsp;
+      <br />&nbsp;
+      <br />&nbsp;
     </div>
   </div>
 </body>

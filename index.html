@@ -17,7 +17,6 @@ html {
 body {
     font-family: 'Helvetica Neue','HelveticaNeue','helvetica neue',helvetica,
                  arial,'lucida grande',sans-serif;
-    font-size: 1em;
     font-weight: 200;
     line-height: 1.75;
     text-shadow: 0px 1px 0px #fff;
@@ -46,22 +45,21 @@ i {
 }
 
 .logo {
-    text-align: right;
     height: 240px;
+    text-align: right;
 }
 
 .tagline {
+    text-align: right;
     font-family: 'Helvetica Neue Thin','HelveticaNeue-Thin','helvetica neue',
                  helvetica,arial,'lucida grande',sans-serif;
-    font-size: 1.5em;
+    font-size: 3em;
     font-weight: 100;
     color: #fff;
     text-shadow: 0px 2px 3px rgba(0,0,0,0.3);
 }
 
 .links {
-    height: auto;
-    min-width: 390px;
     text-align: right;
     font-family: 'Helvetica Neue Thin','HelveticaNeue-Thin','helvetica neue',
                  helvetica,arial,'lucida grande',sans-serif;
@@ -91,7 +89,7 @@ i {
 }
 
 .title {
-    font-size: 1em; letter-spacing: .3em;
+    letter-spacing: 0.3em;
     margin: 0px auto 20px auto;
     text-align: center;
     color: #555;
@@ -111,7 +109,7 @@ i {
 }
 
 .badge {
-    margin: 80px auto;
+    margin: 40px auto;
     text-align: center;
 }
   </style>
@@ -160,8 +158,9 @@ i {
 	</svg>
       </div>
 
+      <div class="tagline">bitcoin&nbsp;done&nbsp;right&nbsp;&nbsp;</div>
+
       <div class="links">
-	<div class="tagline">bitcoin&nbsp;done&nbsp;right&nbsp;&nbsp;</div>
 	&nbsp;<br />
 	<a href="https://itunes.apple.com/app/breadwallet/id885251393"
            onmouseover="$('dl').src='images/download-pressed.png'"
@@ -223,6 +222,8 @@ i {
       your balance and transaction history can be recovered from just your
       backup phrase.
     </div>
+
+    <div class="separator">&mdash;</div>
 
     <div class="badge">
       <img height="585px" width="510px" src="images/screenshots.png" />

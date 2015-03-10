@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>breadwallet - bitcoin wallet</title>
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+        href="/images/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/images/favicon.ico">
+  <meta name="apple-itunes-app" content="app-id=885251393">
+
+  <style type="text/css">
+html { 
+    background: #888 url(images/bazaar.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Helvetica Neue','HelveticaNeue','helvetica neue',helvetica,
+                 arial,'lucida grande',sans-serif;
+    font-weight: 200;
+    line-height: 1.75;
+    text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+i {
+    color: #fff;
+}
+
+.content {
+    width: 80%; height: 500px;
+    min-width: 770px;
+    position: absolute;
+    margin: auto 0;
+    top: 0; left: 10%; bottom: 0; right: auto;
+}
+
+.intro {
+    width: 50%;
+    float: left;
+}
+
+.logo {
+    height: 240px;
+    text-align: right;
+}
+
+.tagline {
+    text-align: right;
+    font-family: 'Helvetica Neue Thin','HelveticaNeue-Thin','helvetica neue',
+                 helvetica,arial,'lucida grande',sans-serif;
+    font-size: 3em;
+    font-weight: 100;
+    color: #fff;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+}
+
+.links {
+    text-align: right;
+    font-family: 'Helvetica Neue Thin','HelveticaNeue-Thin','helvetica neue',
+                 helvetica,arial,'lucida grande',sans-serif;
+    font-size: 2em;
+    font-weight: 100;
+    color: #fff;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+}
+
+.action {
+    width: 40px; height: 40px;
+    vertical-align: middle;
+}
+
+.screenshot {
+    float: left;
+    margin: -80px 0 0 80px;
+}
+
+.section {
+    max-width: 770px;
+    margin: 60px auto;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: 150;
+    color: #fff;
+}
+
+.line {
+    display: inline-block;
+    text-decoration: line-through;
+    font-size: 0.6em;
+}
+
+.title {
+    letter-spacing: 0.3em;
+    margin: 0px auto 50px auto;
+    text-align: center;
+    font-size: 0.6em;
+    font-weight: 500;
+    color: #fff;
+}
+
+.icon {
+    width: 50px; height: 50px;
+    vertical-align: middle;
+}
+
+.separator {
+    margin: 40px;
+    text-align: center;
+    font-size: 2em;
+    color: rgba(255,255,255,0.85);
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+}
+
+.badge {
+    margin: 40px auto;
+    text-align: center;
+}
+  </style>
+
+  <script>var $ = function(id) { return document.getElementById(id); };</script>
+</head>
+
+<body>
+  <div class="content">
+    <div class="intro">
+      <div class="logo">
+	<svg width="395px" viewbox="0 0 500 305"
+	     preserveAspectRatio="xMinYMin meet">
+<defs><filter id="drop-shadow">
+<feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
+<feOffset dx="0" dy="2" result="offsetblur"/>
+<feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+<feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter></defs>
+<g stroke="white" fill-opacity="0" filter="url(#drop-shadow)">
+<g id="bread" stroke-width="20" stroke-linecap="round" 
+   transform="translate(25,15)">
+<g id="b"><path d="m0,0 v+80" /><circle cx="40" cy="80" r="40" />
+<path d="m-15,15 h+45" stroke-width="15" /></g>
+<g id="r" transform="translate(149,0)">
+<path d="m0,40 a40,40 0 0,0 -40,40 v+40" /></g>
+<g id="e" transform="translate(165,0)">
+<path d="m5,95 l+70,-35 m0,0 a40,40 0 1,0 -0,40" /></g>
+<g id="a" transform="translate(266,0)"><path d="m80,80 v+40" />
+<circle cx="40" cy="80" r="40" /></g>
+<g id="d" transform="translate(375,0)"><path d="m80,0 v+80" />
+<circle cx="40" cy="80" r="40" /></g>
+</g>
+<g id="wallet" stroke-width="5" stroke-linecap="round"
+   transform="translate(25,175)">
+<g id="w">
+<path d="m0,40 v+50 a30,30 0 1,0 60,0 v-50 m0,50 a30,30 0 1,0 60,0 v-50" /></g>
+<g id="a" transform="translate(147,0)"><path d="m80,80 v+40" />
+<circle cx="40" cy="80" r="40" /></g>
+<g id="l" transform="translate(256,0)"><path d="m0,0 v+120" /></g>
+<g id="l" transform="translate(289,0)"><path d="m0,0 v+120" /></g>
+<g id="e" transform="translate(318,0)">
+<path d="m5,95 l+70,-35 m0,0 a40,40 0 1,0 -0,40" /></g>
+<g id="t" transform="translate(420,0)">
+<path d="m30,40 h-30 m0,-20 v+70 a30,30 0 0,0 30,30" /></g></g></g>
+	</svg>
+      </div>
+
+      <div class="tagline">bitcoin&nbsp;done&nbsp;right&nbsp;&nbsp;</div>
+
+      <div class="links">
+	&nbsp;<br />
+	<a href="https://itunes.apple.com/app/breadwallet/id885251393"
+           onmouseover="$('dl').src='images/download-pressed.png'"
+           onmouseout="$('dl').src='images/download.png'">
+        download&nbsp;breadwallet&nbsp;<img id="dl" class="action"
+        src="images/download.png" /></a>&nbsp;&nbsp;<br />
+	<a href="https://github.com/voisine/breadwallet" 
+           onmouseover="$('git').src='images/github-pressed.png'"
+           onmouseout="$('git').src='images/github.png'">
+        get&nbsp;the&nbsp;source&nbsp;<img id="git" class="action"
+        src="images/github.png" /></a>&nbsp;&nbsp;
+      </div>
+    </div>
+
+    <div class="screenshot">
+      <img width="300px" height="585px" src="images/new.png">
+    </div>
+
+
+    <div class="section">
+      <div class="title">
+	&nbsp;<br />
+	&nbsp;<br />
+	&nbsp;<br />
+	<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+	THE FIRST STANDALONE iPHONE BITCOIN WALLET
+	<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+	&nbsp;&nbsp;
+      </div>
+      Unlike other iPhone wallets, breadwallet is a real standalone bitcoin
+      client. There is no server to get hacked or go down, so you can always
+      access your money. Using SPV mode, breadwallet connects directly to the
+      bitcoin network with the fast performance you need on a mobile device.
+      <br />&nbsp;<br />&nbsp;
+    </div>
+
+    <div class="section">
+      <div class="title">
+	<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+	THE NEXT STEP IN WALLET SECURITY
+	<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+	&nbsp;&nbsp;
+      </div>
+      breadwallet is designed to protect you from malware, browser security
+      holes, <i>even physical theft</i>. With AES hardware encryption, app
+      sandboxing, keychain and code signatures, breadwallet represents a
+      significant security advance over web and desktop wallets, and other
+      mobile platforms.<br />&nbsp;<br />&nbsp;
+    </div>
+
+    <div class="section">
+      <div class="title">
+	<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+	BEAUTIFUL SIMPLICITY
+	<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+	&nbsp;&nbsp;
+      </div>
+      Simplicity is breadwallet's core design principle. A simple recovery
+      phrase is all you need to restore your wallet on another phone if yours
+      is ever lost. Because breadwallet is "deterministic", your balance and
+      entire transaction history can be restored from just your recovery phrase.
+      <br />&nbsp;
+    </div>
+
+    <div class="badge">
+      &nbsp;<br />
+      &nbsp;<br />
+      <img height="585px" width="510px" src="images/screenshots.png" />
+      <a href="https://itunes.apple.com/app/breadwallet/id885251393"><img
+         height="50px" width="169px" src="images/badge_appstore-lrg.png" 
+	 style="margin: 80px 20px 268px 40px;" /></a>
+      <br />&nbsp;
+      <br />&nbsp;
+      <br />&nbsp;
+    </div>
+  </div>
+</body>
+</html>

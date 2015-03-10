@@ -15,11 +15,13 @@ html {
 }
 
 body {
-    font-family: 'Helvetica Neue','HelveticaNeue','helvetica neue',helvetica,
-                 arial,'lucida grande',sans-serif;
-    font-weight: 200;
+    font-family: 'Helvetica Neue Thin','HelveticaNeue-Thin','helvetica neue',
+                 helvetica,arial,'lucida grande',sans-serif;
     line-height: 1.75;
-    text-shadow: 0px 1px 0px #fff;
+    font-size: 2em;
+    font-weight: 100;
+    color: #fff;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.3);
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -28,7 +30,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 i {
-    color: #000;
+    font-weight: 200;
 }
 
 .content {
@@ -51,22 +53,12 @@ i {
 
 .tagline {
     text-align: right;
-    font-family: 'Helvetica Neue Thin','HelveticaNeue-Thin','helvetica neue',
-                 helvetica,arial,'lucida grande',sans-serif;
-    font-size: 3em;
-    font-weight: 100;
-    color: #fff;
-    text-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+    font-size: 1.5em;
 }
 
 .links {
     text-align: right;
-    font-family: 'Helvetica Neue Thin','HelveticaNeue-Thin','helvetica neue',
-                 helvetica,arial,'lucida grande',sans-serif;
-    font-size: 2em;
-    font-weight: 100;
     color: #fff;
-    text-shadow: 0px 2px 3px rgba(0,0,0,0.3);
 }
 
 .action {
@@ -80,33 +72,32 @@ i {
 }
 
 .section {
-    max-width: 690px;
+    max-width: 770px;
     margin: 60px auto;
-    padding: 40px 30px 40px 40px;
     text-align: left;
-    font-size: 1.3em;
-    color: #666;
-    background: rgba(255,255,255,0.85);
+    font-size: 0.8em;
+    font-weight: 200;
+}
+
+.line {
+    display: inline-block;
+    text-decoration: line-through;
+    font-size: 0.1em;
 }
 
 .title {
-    letter-spacing: 0.2em;
+    font-family: 'Helvetica Neue','HelveticaNeue','helvetica neue',helvetica,
+                 arial,'lucida grande',sans-serif;
+    letter-spacing: 0.3em;
     margin: 0px auto 20px auto;
     text-align: center;
-    color: #555;
+    font-size: 0.6em;
+    font-weight: 400;
 }
 
 .icon {
     width: 50px; height: 50px;
     vertical-align: middle;
-}
-
-.separator {
-    margin: 40px;
-    text-align: center;
-    font-size: 2em;
-    color: rgba(255,255,255,0.85);
-    text-shadow: 0px 2px 3px rgba(0,0,0,0.3);
 }
 
 .badge {
@@ -180,48 +171,51 @@ i {
       <img width="300px" height="585px" src="images/new.png">
     </div>
 
-    <br style="clear: left;" />
-    &nbsp;
 
     <div class="section">
       <div class="title">
-	<img class="icon" src="images/network.png" />
-	&nbsp;THE FIRST STANDALONE iPHONE&nbsp;&nbsp;<br />BITCOIN WALLET&nbsp;
+	&nbsp;<br />
+	&nbsp;<br />
+	&nbsp;<br />
+	<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+	THE FIRST STANDALONE iPHONE BITCOIN WALLET
+	<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+	&nbsp;&nbsp;
       </div>
       Unlike other iPhone wallets, breadwallet is a real standalone bitcoin
       client. There is no server to get hacked or go down, so you can always
       access your money. Using SPV mode, breadwallet connects directly to the
       bitcoin network with the fast performance you need on a mobile device.
+      <br />&nbsp;<br />&nbsp;
     </div>
 
-    <div class="separator">&mdash;</div>
-    
     <div class="section">
       <div class="title">
-	THE NEXT STEP IN WALLET SECURITY&nbsp;
-	<img class="icon" src="images/chain.png" />
+	<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+	THE NEXT STEP IN WALLET SECURITY
+	<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+	&nbsp;&nbsp;
       </div>
       breadwallet is designed to protect you from malware, browser security
       holes, <i>even physical theft</i>. With AES hardware encryption, app
       sandboxing, keychain and code signatures, breadwallet represents a
       significant security advance over web and desktop wallets, and other
-      mobile platforms.
+      mobile platforms.<br />&nbsp;<br />&nbsp;
     </div>
 
-    <div class="separator">&mdash;</div>
-
     <div class="section">
-      <div class="title" style="margin:-10px auto 30px auto">
-	<img class="icon" src="images/button.png" style="vertical-align:bottom"
-	/>&nbsp;&nbsp;BEAUTIFUL SIMPLICITY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="title">
+	<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+	BEAUTIFUL SIMPLICITY
+	<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+	&nbsp;&nbsp;
       </div>
       Simplicity is breadwallet's core design principle. A simple recovery
       phrase is all you need to restore your wallet on another phone if yours
       is ever lost. Because breadwallet is "deterministic", your balance and
       entire transaction history can be restored from just your recovery phrase.
+      <br />&nbsp;<br />&nbsp;
     </div>
-
-    <div class="separator">&mdash;</div>
 
     <div class="badge">
       <img height="585px" width="510px" src="images/screenshots.png" />

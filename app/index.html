@@ -1,8 +1,13 @@
 <script>
 
-  document.location = 'ithrown://restart';
-  setTimeout(function(){
-      document.location = 'http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=293049283&mt=8&uo=6';
-  }, 300);
+if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+    document.location = 'ithrown://restart';
+    setTimeout(function(){
+        document.location = 'http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=293049283&mt=8&uo=6';
+    }, 300);
+}
+else {
+    document.location = 'http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=293049283&mt=8&uo=6';
+}
 
 </script>
